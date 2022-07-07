@@ -1,0 +1,65 @@
+.footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $darkBackground;
+    color: $lightText;
+
+    &--wrapper{
+        @include flexbox(row, space-between, flex);
+        font-size: 1.25rem;
+        padding: 4rem 0;
+
+        .footer__primary{
+            width: 30%;
+            h3{
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                padding: 2rem 0
+            }
+            ul{
+                @include flexbox(column);
+
+                li{
+                    border-bottom: solid transparent 2px;
+                }
+            }
+        }
+
+        .footer__secondary{
+            width: 20%;
+            h3{
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                padding: 2rem 0
+            }
+            ul{
+                @include flexbox(column);
+
+                li{
+                    border-bottom: solid transparent 2px;
+                }
+            }
+            .navbar{
+                @include flexbox(column);
+                .nav__link{
+                    color: $lightText;
+                    border-bottom: solid transparent 2px;
+
+                    &:hover{
+                        border-bottom: solid $accentColor 2px;
+                    }
+                }
+            }
+            .footer--icon{
+                font-size: 2rem; 
+                margin-right: 1rem;
+
+                &:hover{
+                    color: $accentColor;
+                }
+            }
+        }
+    }
+}

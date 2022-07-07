@@ -1,0 +1,14 @@
+$accentColor: red;
+$darkBackground: rgb(27, 27, 27);
+$darkText: #000000;
+$lightText: #ffffff; 
+
+@mixin flexbox($direction: row, $justify: flex-start, $align: flex-start, $gap: 1rem) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+//font-family: 'Poppins', sans-serif;
