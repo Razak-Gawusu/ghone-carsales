@@ -1,0 +1,58 @@
+@import 'variable';
+
+.inventory{
+    background-color: rgb(230, 230, 230);
+    padding: 4rem 0;
+    .inventoryMain{
+        .inventory__sort{
+            padding: 4rem 0;
+            @include flexbox(row, flex-start, center, 2rem);
+            
+            .btn--inventory{
+                border: none;
+                padding: .7em 1.25em;
+            }
+        }
+
+        .inventory--wrapper{
+            display: grid;
+            //grid-template-columns: repeat(4, 1fr);
+            // gap: 2.5rem;
+
+            .inventoryCard{
+                position: relative;
+                background-color: white;
+                width: 25rem;
+                height: 32.5rem;
+                @include flexbox(column, space-between, stretch);
+                transition:  all .25s ease-in-out;
+
+                &:hover{
+                    transform: scale(1.05);
+                }
+
+                .inventoryCard__image{
+                    display: block;
+                    object-fit: cover;
+                    height: 45%;
+                }
+
+                .inventoryCard__info{
+                    height: 50%;
+                    padding: 1rem 2rem; 
+                    @include flexbox(column, space-between)
+                }
+
+                .inventoryCard__kilometers{
+                    position: absolute;
+                    top: 1rem;
+                    left: 1rem;
+                    background-color: green;
+                    color: white;
+                    padding: .5rem 1.2rem;
+                }
+            }
+        }
+    }
+
+}

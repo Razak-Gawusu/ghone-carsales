@@ -126,6 +126,12 @@ img {
     align-items: flex-start;
     gap: 1rem;
   }
+
+  .inventory .inventoryMain .inventory--wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
 }
 @media screen and (min-width: 1080px) {
   .hero {
@@ -167,6 +173,12 @@ img {
     width: 50%;
     display: block !important;
     align-items: center;
+  }
+
+  .inventory .inventoryMain .inventory--wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
   }
 }
 .hero {
@@ -232,4 +244,62 @@ img {
   text-decoration: none;
   font-size: 2rem;
   padding: 1.5rem;
+}
+
+.inventory {
+  background-color: rgb(230, 230, 230);
+  padding: 4rem 0;
+}
+.inventory .inventoryMain .inventory__sort {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.inventory .inventoryMain .inventory__sort .btn--inventory {
+  border: none;
+  padding: 0.7em 1.25em;
+}
+.inventory .inventoryMain .inventory--wrapper {
+  display: grid;
+}
+.inventory .inventoryMain .inventory--wrapper .inventoryCard {
+  position: relative;
+  background-color: white;
+  width: 25rem;
+  height: 32.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+  transition: all 0.25s ease-in-out;
+}
+.inventory .inventoryMain .inventory--wrapper .inventoryCard:hover {
+  transform: scale(1.05);
+}
+.inventory .inventoryMain .inventory--wrapper .inventoryCard .inventoryCard__image {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 45%;
+}
+.inventory .inventoryMain .inventory--wrapper .inventoryCard .inventoryCard__info {
+  height: 50%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.inventory .inventoryMain .inventory--wrapper .inventoryCard .inventoryCard__kilometers {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: green;
+  color: white;
+  padding: 0.5rem 1.2rem;
 }/*# sourceMappingURL=main.css.map */
