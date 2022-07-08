@@ -1,0 +1,54 @@
+.hero{
+    height: 100vh;
+    &__text{
+        @include flexbox(column, flex-start, flex-start, 2rem);
+        padding: 4rem 0;
+
+        &--image{
+            display: block;
+            padding: 2rem 0;
+        }
+        .mainTitle{
+            margin-bottom: 2rem;
+            padding: 2rem 0;
+            position: relative;
+
+            &::before{
+                content: '';
+                background-color: $accentColor;
+                height: .5rem;
+                width: 20%;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        .paragraph{
+            margin: 2rem 0;
+        }
+
+        .hero__links{
+            width: 100%;
+
+            .btn{
+                display: block;
+                width: inherit;
+                margin-bottom: 2rem;
+                text-align: center;
+                background-color: rgba(128, 128, 128, .2);
+                color: $darkText;
+            }
+
+            .callToAction{
+                background-color: $accentColor;
+                color: $lightText;
+                text-transform: capitalize;
+            }
+        }
+    }
+    &__image{
+        display: none;
+
+    }
+}
+

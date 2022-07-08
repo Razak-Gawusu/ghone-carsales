@@ -1,0 +1,53 @@
+@import 'config';
+
+@include media-sm{
+    .header{
+        .navbar{
+            display: none;
+        }
+    }
+}
+
+@include media-md{
+    .footer{
+        &--wrapper{
+            @include flexbox(row, space-between, flex-start);
+        }
+    }
+    
+}
+@include media-lg{
+    .hero{
+        @include flexbox(row, space-between, center);
+        &__text{
+            width: 35%;
+            @include flexbox(column, flex-start, flex-start, 2rem);
+            padding: 0;
+    
+            &--image{
+                display: none !important;
+                border: solid 5px green;
+            }
+    
+    
+            .paragraph{
+                margin: 0;
+            }
+    
+            .hero__links{
+                @include flexbox();
+    
+                .callToAction{
+                    background-color: $accentColor;
+                    color: $lightText;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        &__image{
+            width: 50%;
+            display: block !important;
+            align-items: center;
+        }
+    }
+}

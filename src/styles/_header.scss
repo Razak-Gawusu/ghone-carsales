@@ -4,17 +4,20 @@
     font-size: 1.6rem;
     &--wrapper{
         @include flexbox(row, space-between, center, 1rem);
-        padding: 2rem 0;
 
         .navbar{
-            @include flexbox(row, flex-start, center, 2rem);
+            @include flexbox(row, flex-start, flex-start, 2rem);
 
             .nav__link{
                 padding: 1rem 0;
                 border-bottom: solid .3rem transparent;
-                color: black;
+                color: $darkText;
 
-                &:hover{
+                // &:hover{
+                //     border-bottom: solid .3rem $accentColor;
+                // }
+
+                &:active{
                     border-bottom: solid .3rem $accentColor;
                 }
             }

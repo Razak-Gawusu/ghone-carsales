@@ -1,26 +1,19 @@
 .footer{
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-color: $darkBackground;
     color: $lightText;
 
     &--wrapper{
-        @include flexbox(row, space-between, flex);
-        font-size: 1.25rem;
+        @include flexbox(column, flex-start, flex-start, 2rem);
+        font-size: 1.5rem;
         padding: 4rem 0;
 
         .footer__primary{
-            width: 30%;
             h3{
-                font-size: 1.5rem;
+                font-size: 1.75rem;
                 text-transform: uppercase;
                 padding: 2rem 0
             }
             ul{
-                @include flexbox(column);
-
                 li{
                     border-bottom: solid transparent 2px;
                 }
@@ -28,21 +21,18 @@
         }
 
         .footer__secondary{
-            width: 20%;
             h3{
-                font-size: 1.5rem;
+                font-size: 1.75rem;
                 text-transform: uppercase;
                 padding: 2rem 0
             }
             ul{
-                @include flexbox(column);
-
                 li{
                     border-bottom: solid transparent 2px;
                 }
             }
             .navbar{
-                @include flexbox(column);
+                @include flexbox(column, flex-start, flex-start, .1rem);
                 .nav__link{
                     color: $lightText;
                     border-bottom: solid transparent 2px;
