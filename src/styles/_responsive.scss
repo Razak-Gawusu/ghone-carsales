@@ -72,4 +72,17 @@
         }
     
     }
+
+    .customOrder{
+        &__mainContent{
+            @include flexbox(column);
+            &--item{
+                width: 50%;
+
+            }
+            .customOrder__mainContent--item + .customOrder__mainContent--item{
+                align-self: flex-end;
+            }
+        }
+    }
 }

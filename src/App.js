@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Inventory from "./pages/Inventory";
 
 import Error from "./pages/Error";
+import CustomOrder from "./pages/CustomOrder";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Home />}/>
             <Route path="inventory" element={<Inventory />}/>
+            <Route path="customOrder" element={<CustomOrder />}/>
             <Route path="*" element={<Error />}/>
           </Route>
         </Routes>

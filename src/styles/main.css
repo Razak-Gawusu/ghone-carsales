@@ -180,6 +180,20 @@ img {
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
   }
+
+  .customOrder__mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .customOrder__mainContent--item {
+    width: 50%;
+  }
+  .customOrder__mainContent .customOrder__mainContent--item + .customOrder__mainContent--item {
+    align-self: flex-end;
+  }
 }
 .hero {
   height: 100vh;
@@ -302,4 +316,23 @@ img {
   background-color: green;
   color: white;
   padding: 0.5rem 1.2rem;
+}
+
+.customOrder__heading {
+  padding: 5rem 0;
+}
+.customOrder__heading p {
+  font-size: 1.5rem;
+}
+.customOrder__mainContent--item {
+  margin-bottom: 4rem;
+}
+.customOrder__mainContent--item h2 {
+  font-size: 2rem;
+  padding: 2rem 0;
+  margin: 1rem 0;
+}
+.customOrder__mainContent--item p {
+  font-size: 1.5rem;
+  margin: 2rem 0;
 }/*# sourceMappingURL=main.css.map */
