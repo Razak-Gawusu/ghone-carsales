@@ -8,9 +8,11 @@
             padding: 4rem 0;
             @include flexbox(row, flex-start, center, 2rem);
             
-            .btn--inventory{
-                border: none;
-                padding: .7em 1.25em;
+            .btn{
+                &:hover{
+                    background-color: $accentColor;
+                    color: $lightText;
+                }
             }
         }
 
@@ -40,14 +42,28 @@
                 .inventoryCard__info{
                     height: 50%;
                     padding: 1rem 2rem; 
-                    @include flexbox(column, space-between)
+                    @include flexbox(column, space-between);
+
+                    &--name{
+                        color: $accentColor
+                    }
+
+                    &--price{
+                        font-size: 1.25rem;
+                        color: $accentColor2;
+                    }
+
+                    &--type{
+                        color: $darkTextAlt;
+                        font-size: 1.25rem;
+                    }
                 }
 
                 .inventoryCard__kilometers{
                     position: absolute;
                     top: 1rem;
                     left: 1rem;
-                    background-color: green;
+                    background-color: $accentColor2;
                     color: white;
                     padding: .5rem 1.2rem;
                 }

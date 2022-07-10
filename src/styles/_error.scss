@@ -1,0 +1,17 @@
+@import 'variable';
+
+.error{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    &--wrapper{
+        .paragraph{
+            margin: 4rem 0;
+    
+            .link{
+                color: $accentColor;
+            }
+        }
+    }
+}

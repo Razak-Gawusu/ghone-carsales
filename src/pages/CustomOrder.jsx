@@ -6,17 +6,17 @@ function CustomOrder() {
       <div className="container">
         <section className="customOrder__heading">
           <h1 className='mainTitle'>Custom Order</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate quam necessitatibus officiis magnam tempore facilis, sapiente possimus corrupti at et culpa pariatur illum, nobis iure qui molestiae voluptas, consequatur aliquam. Dolorum cumque eum beatae quo.</p>
+          <p>Personalized service has been our trademark for 20 years. Whether you need advice on the best new or used car to buy, or you want the ideal experience in locating and purchasing your selected vehicle, trust us to handle all your needs with expert care and discretion.</p>
         </section>
         <section className="customOrder__mainContent">
           <article className='customOrder__mainContent--item'>
-            <h2>New Cars</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quo impedit magni illum nobis ducimus voluptatibus quasi optio excepturi quia odit illo autem adipisci sit ex, animi iure molestiae doloribus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium perspiciatis iure corporis rem commodi eveniet animi suscipit adipisci ea veritatis error tenetur modi soluta officiis, vitae pariatur facere optio?</p>
+            <h2 className='mainTitle'>New Cars</h2>
+            <p>Time for a new car? We have experience with all makes and models, from rare high-end imports to budget student vehicles. Contact us to let our team help you decide on the best fit for your needs and budget.</p>
+            <p>With our network of connections within dealerships and brokerages across the province, we can ensure you get the best value and the best experience in buying your vehicle. Don't haggle, let the Canada1 team secure your best options.</p>
           </article>
           <article className='customOrder__mainContent--item'>
-            <h2>used cars</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam commodi delectus, ipsam incidunt, illum eaque eius quasi nobis perspiciatis fuga fugit repellendus esse. Officiis iusto impedit rerum beatae voluptatem. Enim explicabo porro corporis, recusandae iusto ex sunt? Natus, quae repellat!</p>
+            <h2 className='mainTitle'>Used Cars</h2>
+            <p>Our personal shopper service doesn't stop with new cars. Whether you have a budget in mind and you're seeking the best value, or you have a specific make and model in your sights, we have a number of sources for quality used vehicles of all types. Contact us today and let us track down your next car, at the right price - and backed by the Canada1 Car Sales service experience.</p>
           </article>
         </section>
       </div>

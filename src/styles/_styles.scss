@@ -1,13 +1,43 @@
 .mainTitle{
     font-size: 4rem;
+    position: relative;
+    padding: 2rem 0;
+    color: $darkTextAlt;
+    font-family: 'Poppins', sans-serif;
+
+    &::before{
+        content: '';
+        background-color: $accentColor;
+        height: .5rem;
+        width: 10rem;
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 .paragraph{
     font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn{
     text-decoration: none;
-    font-size: 2rem;
-    padding: 1.5rem;
+    padding: 1em 2em;
+    color: $darkText;
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    text-transform: capitalize;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+
+    transition: all .25s ease-in-out;
+
+    &:hover{
+        transform: translateY(-.5rem);
+    }
+}
+
+.link{
+    text-decoration: none;
+    color: $darkText;
 }

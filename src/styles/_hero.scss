@@ -8,20 +8,6 @@
             display: block;
             padding: 2rem 0;
         }
-        .mainTitle{
-            margin-bottom: 2rem;
-            padding: 2rem 0;
-            position: relative;
-
-            &::before{
-                content: '';
-                background-color: $accentColor;
-                height: .5rem;
-                width: 20%;
-                position: absolute;
-                bottom: 0;
-            }
-        }
 
         .paragraph{
             margin: 2rem 0;
@@ -31,18 +17,18 @@
             width: 100%;
 
             .btn{
+                font-size: 2rem;
                 display: block;
                 width: inherit;
                 margin-bottom: 2rem;
-                text-align: center;
-                background-color: rgba(128, 128, 128, .2);
-                color: $darkText;
             }
 
             .callToAction{
                 background-color: $accentColor;
                 color: $lightText;
-                text-transform: capitalize;
+                &:hover{
+                    background-color: $accentColorHover;
+                }
             }
         }
     }

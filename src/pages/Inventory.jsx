@@ -5,22 +5,21 @@ import InventoryCard from '../components/InventoryCard'
 function Inventory() {
   const [inventory, setInventory] = useState(inventoryData)
 
-  console.log(inventory)
-  useEffect(() => {
-    console.log('refreshed')
-  }, [inventory])
-
   function sortByKilometers (){
-    console.log('clicked on sort by kilometers')
-    setInventory(prev => inventory.sort((a, b) => a.kilometers > b.kilometers ? 1 : -1))
-    console.log(inventory)
+    setInventory(prev => (
+      prev.slice(0).sort((a, b) => a.kilometers - b.kilometers) 
+    ))
   }
   
   function sortByPrices (){
-    console.log('clicked on sort by price')
-    setInventory(prev => inventory.sort((a, b) => a.price > b.price ? 1 : -1))
-    console.log(inventory)
+    setInventory(prev => (
+      prev.slice(0).sort((a, b) => a.price - b.price) 
+    ))
   }
+
+  useEffect(() => {
+    console.log('refreshed')
+  }, [inventory])
   
 
   return (
@@ -30,14 +29,15 @@ function Inventory() {
       <div className='inventoryMain'>
         <div className='inventory__sort'>
           <h4>Sort by</h4>
-          <button className='btn--inventory' onClick={sortByKilometers}>kilometers</button>
-          <button className='btn--inventory' onClick={sortByPrices}>price</button>
+          <button className='btn' onClick={sortByKilometers}>kilometers</button>
+          <button className='btn' onClick={sortByPrices}>price</button>
         </div>
 
         <div className='inventory--wrapper'>
           {inventory.map((inventory) => (
             <InventoryCard 
               key={inventory.id}
+              id={inventory.id}
               name={inventory.name}
               price={inventory.price}
               type={inventory.type}

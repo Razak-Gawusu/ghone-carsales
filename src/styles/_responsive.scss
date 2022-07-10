@@ -25,13 +25,23 @@
         }
     
     }
+
+    .inventorySingle{
+        &--wrapper{
+            .inventorySingle__item{
+                &--spec{
+                    grid-template-columns: repeat(2, 1fr) !important;
+                }
+            }
+        }
+    }
     
 }
 @include media-lg{
     .hero{
         @include flexbox(row, space-between, center);
         &__text{
-            width: 35%;
+            width: 40%;
             @include flexbox(column, flex-start, flex-start, 2rem);
             padding: 0;
     
@@ -73,6 +83,16 @@
     
     }
 
+    .inventorySingle{
+        &--wrapper{
+            .inventorySingle__item{
+                &--spec{
+                    grid-template-columns: repeat(3, 1fr) !important;
+                }
+            }
+        }
+    }
+
     .customOrder{
         &__mainContent{
             @include flexbox(column);
@@ -82,6 +102,16 @@
             }
             .customOrder__mainContent--item + .customOrder__mainContent--item{
                 align-self: flex-end;
+            }
+        }
+    }
+
+    .error{
+        &--wrapper{
+            @include flexbox();
+
+            .error__item{
+                width: 50%;
             }
         }
     }

@@ -1,0 +1,14 @@
+.contact{
+    height: 100vh;
+    &__heading{
+        padding: 5rem 0;
+    }
+    &__mainContent{
+        font-size: 1.5rem;
+    }
+
+    &--icon{
+        color: $accentColor;
+        margin-right: 1rem;
+    }
+}

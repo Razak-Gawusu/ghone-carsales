@@ -7,6 +7,9 @@ import Inventory from "./pages/Inventory";
 
 import Error from "./pages/Error";
 import CustomOrder from "./pages/CustomOrder";
+import Contact from "./pages/Contact";
+import HappyCustomers from "./pages/HappyCustomers";
+import InventorySingleLayout from "./pages/InventorySingleLayout";
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Home />}/>
             <Route path="inventory" element={<Inventory />}/>
+            <Route path="inventory/:id" element={<InventorySingleLayout />}/>
             <Route path="customOrder" element={<CustomOrder />}/>
+            <Route path="happyCustomers" element={<HappyCustomers />}/>
+            <Route path="contact" element={<Contact />}/>
             <Route path="*" element={<Error />}/>
           </Route>
         </Routes>
