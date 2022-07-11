@@ -3,7 +3,7 @@
     position: relative;
     padding: 2rem 0;
     color: $darkTextAlt;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
 
     &::before{
         content: '';
@@ -17,7 +17,8 @@
 
 .paragraph{
     font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 2.75rem;
 }
 
 .btn{
@@ -41,3 +42,8 @@
     text-decoration: none;
     color: $darkText;
 }
+
+
+//font-family: 'Archivo Black', sans-serif; title
+
+//font-family: 'Noto Sans', sans-serif;

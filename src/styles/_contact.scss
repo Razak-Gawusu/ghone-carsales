@@ -1,10 +1,41 @@
 .contact{
     height: 100vh;
+    margin: 4rem 0;
     &__heading{
-        padding: 5rem 0;
+        margin: 4rem 0;
     }
-    &__mainContent{
-        font-size: 1.5rem;
+
+    &__mainContent--item{
+        margin-bottom: 4rem;
+        .mainTitle{
+            font-size: 2.5rem;
+            margin: 2rem 0;
+        }
+
+        h5{
+            font-size: 1.75rem;
+            font-family: 'Noto Sans', sans-serif;
+            margin: 2.5rem 0;
+        }
+
+        div {
+            @include flexbox(row, flex-start, center);
+            font-size: 1.5rem;
+            font-family: 'Noto Sans', sans-serif;
+            margin: 1.5rem 0;
+
+            .contact--icon{
+                font-size: 2rem;
+            }
+
+            .facebook{
+                color: royalblue;
+            }
+
+            .instagram{
+                color: orange;
+            }
+        }
     }
 
     &--icon{

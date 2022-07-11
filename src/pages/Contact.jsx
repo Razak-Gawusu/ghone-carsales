@@ -10,8 +10,8 @@ function Contact() {
         </section>
         <section className="contact__mainContent">
           <article className='contact__mainContent--item'>
-            <h2>Ghana 1 Car Sales</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h2 className='mainTitle'>Ghana 1 Car Sales</h2>
+            <p className='paragraph'>Ready to move forward with securing your next vehicle? Contact us now!</p>
             <h5>By appointment only.</h5>
             <div>
               <FaMarker className='contact--icon' />
@@ -27,16 +27,16 @@ function Contact() {
             </div>
 
             <div>
-              <FaFacebook className='contact--icon'/> Facebook
+              <FaFacebook className='contact--icon facebook'/> Facebook
             </div>
 
             <div>
-              <FaInstagram className='contact--icon'/> Instagram
+              <FaInstagram className='contact--icon instagram'/> Instagram
             </div>
 
           </article>
           <article className='contact__mainContent--item'>
-            <h1>map will be here.</h1>
+            <img src="./images/map.png" alt="map" />
           </article>
         </section>
       </div>

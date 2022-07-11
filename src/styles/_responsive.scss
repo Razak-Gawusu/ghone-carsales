@@ -97,7 +97,7 @@
         &__mainContent{
             @include flexbox(column);
             &--item{
-                width: 50%;
+                width: 45%;
 
             }
             .customOrder__mainContent--item + .customOrder__mainContent--item{
@@ -106,11 +106,35 @@
         }
     }
 
+    .happyCustomers{
+        &__mainContent{
+            @include flexbox(column);
+        }
+        
+        .testimonial{
+           width: 65%
+        }
+
+        .testimonial + .testimonial {
+            align-self: flex-end
+        }
+    }
+
     .error{
         &--wrapper{
             @include flexbox();
 
             .error__item{
+                width: 50%;
+            }
+        }
+    }
+
+    .contact{
+        &__mainContent{
+            @include flexbox(row, space-between);
+
+            &--item{
                 width: 50%;
             }
         }

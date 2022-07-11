@@ -34,6 +34,7 @@ img {
 .navbar .nav__link {
   text-decoration: none;
   text-transform: capitalize;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .header {
@@ -192,9 +193,22 @@ img {
     gap: 1rem;
   }
   .customOrder__mainContent--item {
-    width: 50%;
+    width: 45%;
   }
   .customOrder__mainContent .customOrder__mainContent--item + .customOrder__mainContent--item {
+    align-self: flex-end;
+  }
+  .happyCustomers__mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .happyCustomers .testimonial {
+    width: 65%;
+  }
+  .happyCustomers .testimonial + .testimonial {
     align-self: flex-end;
   }
   .error--wrapper {
@@ -205,6 +219,16 @@ img {
     gap: 1rem;
   }
   .error--wrapper .error__item {
+    width: 50%;
+  }
+  .contact__mainContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .contact__mainContent--item {
     width: 50%;
   }
 }
@@ -251,7 +275,7 @@ img {
   position: relative;
   padding: 2rem 0;
   color: rgb(58, 58, 58);
-  font-family: "Poppins", sans-serif;
+  font-family: "Archivo Black", sans-serif;
 }
 .mainTitle::before {
   content: "";
@@ -264,7 +288,8 @@ img {
 
 .paragraph {
   font-size: 1.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 2.75rem;
 }
 
 .btn {
@@ -356,27 +381,61 @@ img {
   padding: 0.5rem 1.2rem;
 }
 
-.customOrder p {
-  font-size: 1.5rem;
-  margin: 2rem 0;
+.customOrder {
+  margin: 4rem 0;
+}
+.customOrder__heading {
+  margin: 4rem 0;
 }
 .customOrder__mainContent--item {
   margin-bottom: 4rem;
 }
 .customOrder__mainContent--item h2 {
-  font-size: 2rem;
+  font-size: 2.75rem;
   padding: 2rem 0;
   margin: 1rem 0;
+}
+.customOrder__mainContent--item .paragraph {
+  padding: 1.25rem 0;
 }
 
 .contact {
   height: 100vh;
+  margin: 4rem 0;
 }
 .contact__heading {
-  padding: 5rem 0;
+  margin: 4rem 0;
 }
-.contact__mainContent {
+.contact__mainContent--item {
+  margin-bottom: 4rem;
+}
+.contact__mainContent--item .mainTitle {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+.contact__mainContent--item h5 {
+  font-size: 1.75rem;
+  font-family: "Noto Sans", sans-serif;
+  margin: 2.5rem 0;
+}
+.contact__mainContent--item div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
   font-size: 1.5rem;
+  font-family: "Noto Sans", sans-serif;
+  margin: 1.5rem 0;
+}
+.contact__mainContent--item div .contact--icon {
+  font-size: 2rem;
+}
+.contact__mainContent--item div .facebook {
+  color: royalblue;
+}
+.contact__mainContent--item div .instagram {
+  color: orange;
 }
 .contact--icon {
   color: rgb(212, 26, 26);
@@ -433,4 +492,26 @@ img {
   gap: 1rem;
   border-bottom: solid 1px rgb(206, 206, 206);
   padding: 2.5rem 0;
+}
+
+.happyCustomers {
+  margin: 4rem 0;
+}
+.happyCustomers__heading {
+  margin: 4rem 0;
+}
+.happyCustomers .testimonial {
+  margin: 4rem 0;
+}
+.happyCustomers .testimonial .mainTitle {
+  font-size: 2.5rem;
+}
+.happyCustomers .testimonial .paragraph {
+  padding: 1.75rem 0;
+}
+.happyCustomers .testimonial__customer {
+  font-size: 1.75rem;
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(212, 26, 26);
+  margin: 2rem 0;
 }/*# sourceMappingURL=main.css.map */

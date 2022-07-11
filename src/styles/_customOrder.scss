@@ -1,17 +1,22 @@
 .customOrder{
-    p{
-        font-size: 1.5rem;
-        margin: 2rem 0;
+    margin: 4rem 0;
+    &__heading{
+        margin: 4rem 0;
     }
     &__mainContent{
+
 
         &--item{
             margin-bottom: 4rem;
 
             h2{
-                font-size: 2rem;
+                font-size: 2.75rem;
                 padding: 2rem 0;
                 margin: 1rem 0;
+            }
+
+            .paragraph{
+                padding: 1.25rem 0;
             }
         }
     }

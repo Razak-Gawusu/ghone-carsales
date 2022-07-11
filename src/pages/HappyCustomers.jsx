@@ -8,10 +8,10 @@ function HappyCustomers() {
   return (
     <div className='happyCustomers'>
     <div className="container">
-      <section className="contact__heading">
+      <section className="happyCustomers__heading">
         <h1 className='mainTitle'>Happy Customers</h1>
       </section>
-      <section className="contact__mainContent">
+      <section className="happyCustomers__mainContent">
         {testimonials.map((testimonial) => (
           <Testimonials 
             key={testimonial.id}
