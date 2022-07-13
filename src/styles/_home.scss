@@ -1,0 +1,153 @@
+@import 'variable';
+
+.home{
+    .experiences{
+        margin: 4rem 0;
+        .container{
+            @include flexbox(row, space-between);
+            .experiences__item{
+                text-align: center;
+                width: 27.5%;
+                .icon{
+                    font-size: clamp(2.5rem, 5vw, 10rem);
+                    color: $accentColor;
+                }
+        
+                h5{
+                    font-size: clamp(1.25rem, 1vw, 2rem);
+                    padding: 2rem 0;
+                }
+            }
+        }
+    }
+
+    .latestVehicles{
+        padding: 10rem 0;
+        &__item{
+            .mainTitle{
+                font-size: 2.75rem;
+            }
+            .paragraph{
+                margin: 4rem 0;
+            }
+    
+            .btn{
+                font-size: 2rem;
+                background-color: $accentColor;
+                color: $lightText;
+                display: inline-block;
+                @include flexbox(row, center, center);
+            }
+
+            &--cards{
+                margin-bottom: 4rem;
+            }
+        }
+
+
+    }
+
+    .aboutUs{
+        background-image: url(../../public/images/wave1.svg);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: cover;
+        margin: 10rem;
+
+        &__item{
+            .mainTitle{
+                font-size: 2.5rem;
+            }
+            .paragraph{
+                padding: 1rem 0;
+            }
+        }
+
+        padding: 4rem 0;
+    }
+
+    .happyCustomers{
+        padding: 4rem 0;
+        background-color: $darkBackgroundAlt;
+        .mainTitle{
+            font-size: 2.5rem;
+        }
+        .paragraph{
+            padding: 1rem 0;
+        }
+
+        &__item{
+            .testimonialsCard{
+                background-color: $lightText;
+                margin: 4rem 0;
+                position: relative;
+                height: 40rem;
+                @include flexbox(column, space-between, stretch);
+
+                &__image{
+                    height: 50%;
+                    
+                    img{
+                        object-fit: cover;
+                        max-height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                &__info{
+                    padding: 2rem;
+                    font-family: 'Noto Sans', sans-serif;
+
+                    h5{
+                        color: $accentColor;
+                        font-size: 1.7rem;
+                    }
+                    h6{
+                        font-size: 1.25rem;
+                        padding: 1rem 0;
+                    }
+                }
+
+                .icon{
+                    color: $lightText;
+                    font-size: 5rem;
+                    background-color: $accentColor;
+                    padding: 1.25rem;
+                    display: inline-block;
+                    position: absolute;
+                    top:50%;
+                    transform:translate(-50%,-50%);
+                    border-radius: 50%;
+                    left: 5rem;
+                    z-index: 1;
+                }
+            }
+
+            .btn{
+                background-color: $accentColor;
+                font-size: 2rem;
+                color: $lightText;
+                font-family: 'Noto Sans', sans-serif;
+                display: inline-block;
+                @include flexbox(row, center, center);
+            }
+        }
+    }
+
+    .readyToConnect{
+        padding: 10rem 0;
+        &__info{
+            h1{
+                font-size: clamp(3.5rem, 4vw, 5rem);
+                padding: 2rem 0;
+                color: $darkTextAlt;
+                font-family: 'Archivo Black', sans-serif;
+                padding: 4rem 0;
+
+                span{
+                    color: $accentColor;
+                }
+            }
+        }
+    }
+}

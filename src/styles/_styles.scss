@@ -1,5 +1,5 @@
 .mainTitle{
-    font-size: 4rem;
+    font-size: clamp(4rem, 5vw, 6rem);
     position: relative;
     padding: 2rem 0;
     color: $darkTextAlt;
@@ -25,7 +25,7 @@
     text-decoration: none;
     padding: 1em 2em;
     color: $darkText;
-    background-color: rgb(221, 221, 221);
+    background-color: $darkBackgroundAlt;
     text-align: center;
     text-transform: capitalize;
     border: none;
@@ -43,6 +43,22 @@
     color: $darkText;
 }
 
+
+.divider{
+    background-image: url(../../public//images/wave3.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    height: 10rem;
+}
+
+.divider--alt{
+    background-image: url(../../public//images/wave3.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    height: 10rem;
+}
 
 //font-family: 'Archivo Black', sans-serif; title
 

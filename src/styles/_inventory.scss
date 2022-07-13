@@ -1,14 +1,21 @@
 @import 'variable';
 
 .inventory{
-    background-color: rgb(230, 230, 230);
-    padding: 4rem 0;
+    &__heading{
+        background-color: $darkBackgroundAlt;
+    }
     .inventoryMain{
         .inventory__sort{
             padding: 4rem 0;
             @include flexbox(row, flex-start, center, 2rem);
+            h4{
+                font-size: 1.5rem;
+                font-weight: 400;
+                font-family: 'Noto Sans', sans-serif;
+            }
             
             .btn{
+                font-size: 1.5rem;
                 &:hover{
                     background-color: $accentColor;
                     color: $lightText;
@@ -18,57 +25,59 @@
 
         .inventory--wrapper{
             display: grid;
-            //grid-template-columns: repeat(4, 1fr);
-            // gap: 2.5rem;
-
-            .inventoryCard{
-                position: relative;
-                background-color: white;
-                width: 25rem;
-                height: 32.5rem;
-                @include flexbox(column, space-between, stretch);
-                transition:  all .25s ease-in-out;
-
-                &:hover{
-                    transform: scale(1.05);
-                }
-
-                .inventoryCard__image{
-                    display: block;
-                    object-fit: cover;
-                    height: 45%;
-                }
-
-                .inventoryCard__info{
-                    height: 50%;
-                    padding: 1rem 2rem; 
-                    @include flexbox(column, space-between);
-
-                    &--name{
-                        color: $accentColor
-                    }
-
-                    &--price{
-                        font-size: 1.25rem;
-                        color: $accentColor2;
-                    }
-
-                    &--type{
-                        color: $darkTextAlt;
-                        font-size: 1.25rem;
-                    }
-                }
-
-                .inventoryCard__kilometers{
-                    position: absolute;
-                    top: 1rem;
-                    left: 1rem;
-                    background-color: $accentColor2;
-                    color: white;
-                    padding: .5rem 1.2rem;
-                }
-            }
+            margin-bottom: 5rem;
         }
     }
 
+}
+
+.inventoryCard{
+    position: relative;
+    height: 32.5rem;
+    @include flexbox(column, space-between, stretch);
+    transition:  all .25s ease-in-out;
+    background-color: $lightText;
+    font-family: 'Noto Sans', sans-serif;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    .inventoryCard__image{
+        display: block;
+        object-fit: cover;
+        height: 50%;
+    }
+
+    .inventoryCard__info{
+        height: 50%;
+        padding: 1rem 2rem; 
+        @include flexbox(column, space-between);
+
+        &--name{
+            color: $accentColor;
+            font-size: 2.25rem;
+        }
+
+        &--price{
+            font-size: 1.85rem;
+            color: $accentColor2;
+            padding: .75rem 0;
+        }
+
+        &--type{
+            color: $darkTextAlt;
+            font-size: 1.25rem;
+            opacity: .5;
+        }
+    }
+
+    .inventoryCard__kilometers{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        background-color: $accentColor2;
+        color: white;
+        padding: .5rem 1.2rem;
+    }
 }

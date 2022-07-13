@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { testimonials as testimonialsData } from '../data'
+import { testimonials as testimonialsData, galleryData } from '../data'
 import Testimonials from '../components/Testimonials'
 
 function HappyCustomers() {
@@ -7,11 +7,15 @@ function HappyCustomers() {
 
   return (
     <div className='happyCustomers'>
-    <div className="container">
       <section className="happyCustomers__heading">
-        <h1 className='mainTitle'>Happy Customers</h1>
+        <div className="container">
+          <h1 className='mainTitle'>Happy Customers</h1>
+        </div>
       </section>
-      <section className="happyCustomers__mainContent">
+      <section className='divider'>
+      </section>
+
+      <section className="happyCustomers__mainContent container">
         {testimonials.map((testimonial) => (
           <Testimonials 
             key={testimonial.id}
@@ -22,7 +26,20 @@ function HappyCustomers() {
           />
         ))}
       </section>
-    </div>
+
+      <section className='happyCustomers__gallery'>
+          <div className="container">
+            <h1 className='mainTitle'>Image Gallery</h1>
+
+            <div className="happyCustomers__gallery--item">
+              {galleryData.map((image) => (
+                <div>
+                  <img key={image.id} src={`./images/gallery1.jpg`} alt={image.img} />
+                </div>
+              ))}
+            </div>
+          </div>
+      </section>
   </div>
   )
 }

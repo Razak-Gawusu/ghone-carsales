@@ -3,12 +3,18 @@ import React from 'react'
 function CustomOrder() {
   return (
     <div className='customOrder'>
-      <div className="container">
+      <div className="">
         <section className="customOrder__heading">
-          <h1 className='mainTitle'>Custom Order</h1>
-          <p className='paragraph'>Personalized service has been our trademark for 20 years. Whether you need advice on the best new or used car to buy, or you want the ideal experience in locating and purchasing your selected vehicle, trust us to handle all your needs with expert care and discretion.</p>
+          <div className="container">
+            <h1 className='mainTitle'>Custom Order</h1>
+            <p className='paragraph'>Personalized service has been our trademark for 20 years. Whether you need advice on the best new or used car to buy, or you want the ideal experience in locating and purchasing your selected vehicle, trust us to handle all your needs with expert care and discretion.</p>
+          </div>
         </section>
-        <section className="customOrder__mainContent">
+
+        <section className='divider'>
+        </section>
+
+        <section className="customOrder__mainContent container">
           <article className='customOrder__mainContent--item'>
             <h2 className='mainTitle'>New Cars</h2>
             <p className='paragraph'>Time for a new car? We have experience with all makes and models, from rare high-end imports to budget student vehicles. Contact us to let our team help you decide on the best fit for your needs and budget.</p>

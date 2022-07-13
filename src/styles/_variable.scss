@@ -1,10 +1,10 @@
 $accentColor: rgb(212, 26, 26);
 $accentColorHover: rgb(216, 59, 59);
-
 $accentColor2: rgb(6, 143, 102);
 $darkBackground: rgb(27, 27, 27);
+$darkBackgroundAlt: #EFEFEF;
 $darkText: #000000;
-$darkTextAlt: rgb(58, 58, 58);
+$darkTextAlt: rgb(41, 41, 41);
 $lightText: #ffffff; 
 
 @mixin flexbox($direction: row, $justify: flex-start, $align: flex-start, $gap: 1rem) {

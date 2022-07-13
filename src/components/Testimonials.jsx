@@ -5,7 +5,7 @@ function Testimonials(props) {
     <div className='testimonial'>
         <h3 className='mainTitle'>{props.title}</h3>
         <h5 className='testimonial__customer'>{props.customer}</h5>
-        <p className='paragraph'>{props.ratings}</p>
+        <p className='rating'>{props.ratings}</p>
         {props.message.map((message) => (
             <p className='paragraph'>
                 {message}

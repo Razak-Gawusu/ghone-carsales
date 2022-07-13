@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className='header'>
       <div className="header--wrapper container">
-        <h3 className='brandName'>Ghana 1 CarSales</h3>
+        <h3 className='brandName'>GHONE Car Sales</h3>
         <Navbar />
       </div>
     </div>

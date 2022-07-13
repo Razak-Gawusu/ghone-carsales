@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function InventoryCard(props) {
   return (
-    <Link to={`/inventory/${props.id}`}>
+    <Link to={`/inventory/${props.id}`} className='link'>
       <div className='inventoryCard'>
         <img className='inventoryCard__image' src="./images/inventory.jpg" alt="carImage" />
         

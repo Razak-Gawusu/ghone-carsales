@@ -1,6 +1,7 @@
 .footer{
     background-color: $darkBackground;
     color: $lightText;
+    margin-top: 4rem;
 
     &--wrapper{
         @include flexbox(column, flex-start, flex-start, 2rem);

@@ -6,14 +6,48 @@
             display: none;
         }
     }
+
+    .home{
+        .latestVehicles{
+            //@include flexbox(column);
+            &__item:last-child{
+                .btn{
+                    width: 100%
+                }
+            }
+        }
+
+        .readyToConnect{
+            text-align: center
+        }
+    }
 }
 
 @include media-md{
-    .footer{
-        &--wrapper{
-            @include flexbox(row, space-between, flex-start);
+    .home{
+       
+
+        .happyCustomers{
+            &__item{
+                @include flexbox();
+                gap: 4rem;
+            }
+
+            &__item:last-child{
+                justify-content: flex-end;
+            }
+        }
+
+
+        .readyToConnect{
+            .container{
+                @include flexbox(row, space-between, center);
+            }
         }
     }
+
+
+   
 
     .inventory{
         .inventoryMain{
@@ -33,6 +67,13 @@
                     grid-template-columns: repeat(2, 1fr) !important;
                 }
             }
+        }
+    }
+
+
+    .footer{
+        &--wrapper{
+            @include flexbox(row, space-between, flex-start);
         }
     }
     
@@ -71,6 +112,48 @@
             align-items: center;
         }
     }
+
+    .home{
+        .latestVehicles{
+            &__item{
+                @include flexbox(row, space-between);
+
+                .mainTitle{
+                    padding: 0;
+                }
+
+                &--info{
+                    width: 22.5%;
+                }
+
+                &--cards{
+                    width: 72.5%;
+                    @include flexbox(row, space-between, flex-start, 2.5rem);
+
+                    .link{
+                        flex-grow: 1;
+                    }
+                }
+            }
+
+            &__item:last-child{
+                justify-content: flex-end;
+            }
+        }
+
+        .aboutUs{
+            .container{
+                @include flexbox(row, space-between);
+
+                .aboutUs__item{
+                    width: 47.5%;
+                }
+            }
+        }
+    }
+
+    
+
 
     .inventory{
         .inventoryMain{
@@ -115,8 +198,14 @@
            width: 65%
         }
 
-        .testimonial + .testimonial {
+        .testimonial:nth-child(2n){
             align-self: flex-end
+        }
+
+        &__gallery{
+            &--item{
+                grid-template-columns: repeat(4, 1fr) !important;
+            }
         }
     }
 

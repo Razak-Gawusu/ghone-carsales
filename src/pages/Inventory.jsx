@@ -24,9 +24,17 @@ function Inventory() {
 
   return (
     <div className='inventory'>
-      <div className="container">
-      <h1 className='mainTitle'>Inventory</h1>
-      <div className='inventoryMain'>
+
+      <section className="inventory__heading">
+        <div className="container">
+          <h1 className='mainTitle'>Inventory</h1>
+        </div>
+      </section>
+
+      <section className='divider'>
+      </section>
+
+      <section className='inventoryMain container'>
         <div className='inventory__sort'>
           <h4>Sort by</h4>
           <button className='btn' onClick={sortByKilometers}>kilometers</button>
@@ -45,8 +53,7 @@ function Inventory() {
             />
           ))}
         </div>
-      </div>
-      </div>
+      </section>
     </div>
   )
 }

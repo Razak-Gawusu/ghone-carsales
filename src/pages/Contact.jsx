@@ -4,11 +4,15 @@ import {FaEnvelope, FaMarker, FaPhone, FaFacebook, FaInstagram} from 'react-icon
 function Contact() {
   return (
     <div className='contact'>
-      <div className="container">
         <section className="contact__heading">
-          <h1 className='mainTitle'>Contact</h1>
+          <div className="container">
+          <h1 className='mainTitle'>Contact</h1>            
+          </div>
         </section>
-        <section className="contact__mainContent">
+
+        <section className='divider'>
+        </section>
+        <section className="contact__mainContent container">
           <article className='contact__mainContent--item'>
             <h2 className='mainTitle'>Ghana 1 Car Sales</h2>
             <p className='paragraph'>Ready to move forward with securing your next vehicle? Contact us now!</p>
@@ -39,7 +43,6 @@ function Contact() {
             <img src="./images/map.png" alt="map" />
           </article>
         </section>
-      </div>
     </div>
   )
 }

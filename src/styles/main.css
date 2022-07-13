@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul {
@@ -39,6 +40,8 @@ img {
 
 .header {
   font-size: 1.6rem;
+  padding: 2.5rem 0;
+  background-color: #EFEFEF;
 }
 .header--wrapper {
   display: flex;
@@ -46,6 +49,11 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+}
+.header--wrapper .brandName {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2.75rem;
+  color: #000000;
 }
 .header--wrapper .navbar {
   display: flex;
@@ -58,6 +66,7 @@ img {
   padding: 1rem 0;
   border-bottom: solid 0.3rem transparent;
   color: #000000;
+  font-family: "Noto Sans", sans-serif;
 }
 .header--wrapper .navbar .nav__link:active {
   border-bottom: solid 0.3rem rgb(212, 26, 26);
@@ -66,6 +75,7 @@ img {
 .footer {
   background-color: rgb(27, 27, 27);
   color: #ffffff;
+  margin-top: 4rem;
 }
 .footer--wrapper {
   display: flex;
@@ -118,13 +128,30 @@ img {
   .header .navbar {
     display: none;
   }
+  .home .latestVehicles__item:last-child .btn {
+    width: 100%;
+  }
+  .home .readyToConnect {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 860px) {
-  .footer--wrapper {
+  .home .happyCustomers__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    gap: 4rem;
+  }
+  .home .happyCustomers__item:last-child {
+    justify-content: flex-end;
+  }
+  .home .readyToConnect .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
   }
   .inventory .inventoryMain .inventory--wrapper {
@@ -134,6 +161,13 @@ img {
   }
   .inventorySingle--wrapper .inventorySingle__item--spec {
     grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .footer--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -177,6 +211,43 @@ img {
     display: block !important;
     align-items: center;
   }
+  .home .latestVehicles__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .home .latestVehicles__item .mainTitle {
+    padding: 0;
+  }
+  .home .latestVehicles__item--info {
+    width: 22.5%;
+  }
+  .home .latestVehicles__item--cards {
+    width: 72.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  .home .latestVehicles__item--cards .link {
+    flex-grow: 1;
+  }
+  .home .latestVehicles__item:last-child {
+    justify-content: flex-end;
+  }
+  .home .aboutUs .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .home .aboutUs .container .aboutUs__item {
+    width: 47.5%;
+  }
   .inventory .inventoryMain .inventory--wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -208,8 +279,11 @@ img {
   .happyCustomers .testimonial {
     width: 65%;
   }
-  .happyCustomers .testimonial + .testimonial {
+  .happyCustomers .testimonial:nth-child(2n) {
     align-self: flex-end;
+  }
+  .happyCustomers__gallery--item {
+    grid-template-columns: repeat(4, 1fr) !important;
   }
   .error--wrapper {
     display: flex;
@@ -246,6 +320,7 @@ img {
 .hero__text--image {
   display: block;
   padding: 2rem 0;
+  align-self: center;
 }
 .hero__text .paragraph {
   margin: 2rem 0;
@@ -271,10 +346,10 @@ img {
 }
 
 .mainTitle {
-  font-size: 4rem;
+  font-size: clamp(4rem, 5vw, 6rem);
   position: relative;
   padding: 2rem 0;
-  color: rgb(58, 58, 58);
+  color: rgb(41, 41, 41);
   font-family: "Archivo Black", sans-serif;
 }
 .mainTitle::before {
@@ -296,7 +371,7 @@ img {
   text-decoration: none;
   padding: 1em 2em;
   color: #000000;
-  background-color: rgb(221, 221, 221);
+  background-color: #EFEFEF;
   text-align: center;
   text-transform: capitalize;
   border: none;
@@ -312,9 +387,24 @@ img {
   color: #000000;
 }
 
-.inventory {
-  background-color: rgb(230, 230, 230);
-  padding: 4rem 0;
+.divider {
+  background-image: url(../../public//images/wave3.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+  height: 10rem;
+}
+
+.divider--alt {
+  background-image: url(../../public//images/wave3.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+  height: 10rem;
+}
+
+.inventory__heading {
+  background-color: #EFEFEF;
 }
 .inventory .inventoryMain .inventory__sort {
   padding: 4rem 0;
@@ -324,17 +414,25 @@ img {
   align-items: center;
   gap: 2rem;
 }
+.inventory .inventoryMain .inventory__sort h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Noto Sans", sans-serif;
+}
+.inventory .inventoryMain .inventory__sort .btn {
+  font-size: 1.5rem;
+}
 .inventory .inventoryMain .inventory__sort .btn:hover {
   background-color: rgb(212, 26, 26);
   color: #ffffff;
 }
 .inventory .inventoryMain .inventory--wrapper {
   display: grid;
+  margin-bottom: 5rem;
 }
-.inventory .inventoryMain .inventory--wrapper .inventoryCard {
+
+.inventoryCard {
   position: relative;
-  background-color: white;
-  width: 25rem;
   height: 32.5rem;
   display: flex;
   flex-direction: column;
@@ -342,17 +440,19 @@ img {
   align-items: stretch;
   gap: 1rem;
   transition: all 0.25s ease-in-out;
+  background-color: #ffffff;
+  font-family: "Noto Sans", sans-serif;
 }
-.inventory .inventoryMain .inventory--wrapper .inventoryCard:hover {
+.inventoryCard:hover {
   transform: scale(1.05);
 }
-.inventory .inventoryMain .inventory--wrapper .inventoryCard .inventoryCard__image {
+.inventoryCard .inventoryCard__image {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 45%;
+  height: 50%;
 }
-.inventory .inventoryMain .inventory--wrapper .inventoryCard .inventoryCard__info {
+.inventoryCard .inventoryCard__info {
   height: 50%;
   padding: 1rem 2rem;
   display: flex;
@@ -361,18 +461,21 @@ img {
   align-items: flex-start;
   gap: 1rem;
 }
-.inventory .inventoryMain .inventory--wrapper .inventoryCard .inventoryCard__info--name {
+.inventoryCard .inventoryCard__info--name {
   color: rgb(212, 26, 26);
+  font-size: 2.25rem;
 }
-.inventory .inventoryMain .inventory--wrapper .inventoryCard .inventoryCard__info--price {
-  font-size: 1.25rem;
+.inventoryCard .inventoryCard__info--price {
+  font-size: 1.85rem;
   color: rgb(6, 143, 102);
+  padding: 0.75rem 0;
 }
-.inventory .inventoryMain .inventory--wrapper .inventoryCard .inventoryCard__info--type {
-  color: rgb(58, 58, 58);
+.inventoryCard .inventoryCard__info--type {
+  color: rgb(41, 41, 41);
   font-size: 1.25rem;
+  opacity: 0.5;
 }
-.inventory .inventoryMain .inventory--wrapper .inventoryCard .inventoryCard__kilometers {
+.inventoryCard .inventoryCard__kilometers {
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -381,11 +484,9 @@ img {
   padding: 0.5rem 1.2rem;
 }
 
-.customOrder {
-  margin: 4rem 0;
-}
 .customOrder__heading {
-  margin: 4rem 0;
+  padding: 4rem 0;
+  background-color: #EFEFEF;
 }
 .customOrder__mainContent--item {
   margin-bottom: 4rem;
@@ -401,10 +502,10 @@ img {
 
 .contact {
   height: 100vh;
-  margin: 4rem 0;
 }
 .contact__heading {
-  margin: 4rem 0;
+  padding: 4rem 0;
+  background-color: #EFEFEF;
 }
 .contact__mainContent--item {
   margin-bottom: 4rem;
@@ -456,7 +557,7 @@ img {
 
 .inventorySingle .link {
   font-size: 1.5rem;
-  color: rgb(58, 58, 58);
+  color: rgb(41, 41, 41);
 }
 .inventorySingle .link:hover {
   color: rgb(212, 26, 26);
@@ -494,24 +595,183 @@ img {
   padding: 2.5rem 0;
 }
 
-.happyCustomers {
-  margin: 4rem 0;
-}
 .happyCustomers__heading {
+  padding: 4rem 0;
+  background-color: #EFEFEF;
+}
+.happyCustomers__mainContent .testimonial {
   margin: 4rem 0;
 }
-.happyCustomers .testimonial {
-  margin: 4rem 0;
-}
-.happyCustomers .testimonial .mainTitle {
+.happyCustomers__mainContent .testimonial .mainTitle {
   font-size: 2.5rem;
 }
-.happyCustomers .testimonial .paragraph {
+.happyCustomers__mainContent .testimonial .rating {
+  font-size: 1.75rem;
+}
+.happyCustomers__mainContent .testimonial .paragraph {
   padding: 1.75rem 0;
 }
-.happyCustomers .testimonial__customer {
+.happyCustomers__mainContent .testimonial__customer {
   font-size: 1.75rem;
   font-family: "Noto Sans", sans-serif;
   color: rgb(212, 26, 26);
   margin: 2rem 0;
+}
+.happyCustomers__gallery .mainTitle {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+.happyCustomers__gallery--item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+.happyCustomers__gallery--item div {
+  overflow: hidden;
+}
+.happyCustomers__gallery--item div img {
+  transition: all 0.25s ease-in-out;
+}
+.happyCustomers__gallery--item div img:hover {
+  transform: scale(1.05);
+}
+
+.home .experiences {
+  margin: 4rem 0;
+}
+.home .experiences .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.home .experiences .container .experiences__item {
+  text-align: center;
+  width: 27.5%;
+}
+.home .experiences .container .experiences__item .icon {
+  font-size: clamp(2.5rem, 5vw, 10rem);
+  color: rgb(212, 26, 26);
+}
+.home .experiences .container .experiences__item h5 {
+  font-size: clamp(1.25rem, 1vw, 2rem);
+  padding: 2rem 0;
+}
+.home .latestVehicles {
+  padding: 10rem 0;
+}
+.home .latestVehicles__item .mainTitle {
+  font-size: 2.75rem;
+}
+.home .latestVehicles__item .paragraph {
+  margin: 4rem 0;
+}
+.home .latestVehicles__item .btn {
+  font-size: 2rem;
+  background-color: rgb(212, 26, 26);
+  color: #ffffff;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.home .latestVehicles__item--cards {
+  margin-bottom: 4rem;
+}
+.home .aboutUs {
+  background-image: url(../../public/images/wave1.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+  margin: 10rem;
+  padding: 4rem 0;
+}
+.home .aboutUs__item .mainTitle {
+  font-size: 2.5rem;
+}
+.home .aboutUs__item .paragraph {
+  padding: 1rem 0;
+}
+.home .happyCustomers {
+  padding: 4rem 0;
+  background-color: #EFEFEF;
+}
+.home .happyCustomers .mainTitle {
+  font-size: 2.5rem;
+}
+.home .happyCustomers .paragraph {
+  padding: 1rem 0;
+}
+.home .happyCustomers__item .testimonialsCard {
+  background-color: #ffffff;
+  margin: 4rem 0;
+  position: relative;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+}
+.home .happyCustomers__item .testimonialsCard__image {
+  height: 50%;
+}
+.home .happyCustomers__item .testimonialsCard__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 100%;
+  width: 100%;
+}
+.home .happyCustomers__item .testimonialsCard__info {
+  padding: 2rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.home .happyCustomers__item .testimonialsCard__info h5 {
+  color: rgb(212, 26, 26);
+  font-size: 1.7rem;
+}
+.home .happyCustomers__item .testimonialsCard__info h6 {
+  font-size: 1.25rem;
+  padding: 1rem 0;
+}
+.home .happyCustomers__item .testimonialsCard .icon {
+  color: #ffffff;
+  font-size: 5rem;
+  background-color: rgb(212, 26, 26);
+  padding: 1.25rem;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  left: 5rem;
+  z-index: 1;
+}
+.home .happyCustomers__item .btn {
+  background-color: rgb(212, 26, 26);
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: "Noto Sans", sans-serif;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.home .readyToConnect {
+  padding: 10rem 0;
+}
+.home .readyToConnect__info h1 {
+  font-size: clamp(3.5rem, 4vw, 5rem);
+  padding: 2rem 0;
+  color: rgb(41, 41, 41);
+  font-family: "Archivo Black", sans-serif;
+  padding: 4rem 0;
+}
+.home .readyToConnect__info h1 span {
+  color: rgb(212, 26, 26);
 }/*# sourceMappingURL=main.css.map */

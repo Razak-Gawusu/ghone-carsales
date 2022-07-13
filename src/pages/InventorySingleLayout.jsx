@@ -3,16 +3,16 @@ import { Link, useParams } from 'react-router-dom'
 import { inventoryData } from '../data'
 import { FaLongArrowAltLeft } from 'react-icons/fa'
 
+
 function InventorySingleLayout() {
     const { id } = useParams()
     
     const inventory = inventoryData.filter((inventory) => inventory.id == id) 
 
-    console.log(inventory)
+    //console.log(inventory[0])
 
     return (
     <div className='inventorySingle'>
-
         <div className="container">
             {inventory.map((inventory) => (
                 <>
@@ -28,8 +28,7 @@ function InventorySingleLayout() {
                         </div>
 
                         <div>
-                        <img src={`./images/${inventory.img}`} alt={inventory.img} />
-                        <img src="./images/accident.png" alt="crashed car" />
+                            
                         </div>
                     </div>
 
