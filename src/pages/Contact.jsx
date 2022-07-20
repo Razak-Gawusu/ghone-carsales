@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaEnvelope, FaMarker, FaPhone, FaFacebook, FaInstagram} from 'react-icons/fa'
+import {MapContainer, Marker, TileLayer} from 'react-leaflet'
 
 function Contact() {
   return (
@@ -39,8 +40,15 @@ function Contact() {
             </div>
 
           </article>
-          <article className='contact__mainContent--item'>
-            <img src="./images/map.png" alt="map" />
+          <article className='contact__mainContent--item' id='contactMap'>
+            {/* <img src="./images/map.png" alt="" /> */}
+              <MapContainer id='map' center={[51.505, -0.09]} zoom={15 } scrollWheelZoom={true}>
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={[51.505, -0.09]}></Marker>
+              </MapContainer>
           </article>
         </section>
     </div>

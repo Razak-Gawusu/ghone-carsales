@@ -68,7 +68,7 @@ img {
   color: #000000;
   font-family: "Noto Sans", sans-serif;
 }
-.header--wrapper .navbar .nav__link:active {
+.header--wrapper .navbar .nav__link:hover {
   border-bottom: solid 0.3rem rgb(212, 26, 26);
 }
 
@@ -253,6 +253,23 @@ img {
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
   }
+  .inventorySingle--wrapper .inventorySingle__item.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    min-height: 70vh;
+  }
+  .inventorySingle--wrapper .inventorySingle__item.top .inventorySingle__item--text {
+    width: 45%;
+  }
+  .inventorySingle--wrapper .inventorySingle__item.top .inventorySingle__item--text h3 {
+    width: 65%;
+  }
+  .inventorySingle--wrapper .inventorySingle__item.top .inventorySingle__item--img {
+    width: 45%;
+  }
   .inventorySingle--wrapper .inventorySingle__item--spec {
     grid-template-columns: repeat(3, 1fr) !important;
   }
@@ -278,9 +295,6 @@ img {
   }
   .happyCustomers .testimonial {
     width: 65%;
-  }
-  .happyCustomers .testimonial:nth-child(2n) {
-    align-self: flex-end;
   }
   .happyCustomers__gallery--item {
     grid-template-columns: repeat(4, 1fr) !important;
@@ -568,21 +582,21 @@ img {
 .inventorySingle--wrapper .inventorySingle__item {
   font-size: 1.5rem;
 }
-.inventorySingle--wrapper .inventorySingle__item .mainTitle {
+.inventorySingle--wrapper .inventorySingle__item--text .mainTitle {
   margin: 2rem 0;
 }
-.inventorySingle--wrapper .inventorySingle__item h3 {
+.inventorySingle--wrapper .inventorySingle__item--text h3 {
   font-size: 2.75rem;
   margin: 2rem 0;
 }
-.inventorySingle--wrapper .inventorySingle__item .accentColor {
+.inventorySingle--wrapper .inventorySingle__item--text .accentColor {
   color: rgb(6, 143, 102);
 }
 .inventorySingle--wrapper .inventorySingle__item--spec {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
   margin-bottom: 4rem;
 }
 .inventorySingle--wrapper .inventorySingle__item--spec .spec--item {
@@ -593,6 +607,16 @@ img {
   gap: 1rem;
   border-bottom: solid 1px rgb(206, 206, 206);
   padding: 2.5rem 0;
+}
+.inventorySingle--wrapper .inventorySingle__item--spec .spec--item div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start 1.5rem;
+  gap: 1rem;
+}
+.inventorySingle--wrapper .inventorySingle__item--spec .spec--item div img {
+  width: 2rem;
 }
 
 .happyCustomers__heading {
@@ -686,7 +710,7 @@ img {
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: cover;
-  margin: 10rem;
+  margin: 10rem 0;
   padding: 4rem 0;
 }
 .home .aboutUs__item .mainTitle {
@@ -774,4 +798,12 @@ img {
 }
 .home .readyToConnect__info h1 span {
   color: rgb(212, 26, 26);
+}
+
+#map {
+  height: 40rem;
+}
+
+#contactMap {
+  height: 40rem;
 }/*# sourceMappingURL=main.css.map */

@@ -168,6 +168,21 @@
 
     .inventorySingle{
         &--wrapper{
+            .inventorySingle__item.top{
+                @include flexbox(row, space-between, center);
+                min-height: 70vh;
+
+                .inventorySingle__item--text{
+                    width: 45%;
+                    h3{
+                        width: 65%;
+                    }
+                }
+                .inventorySingle__item--img{
+                    width: 45%;
+                }
+            }
+
             .inventorySingle__item{
                 &--spec{
                     grid-template-columns: repeat(3, 1fr) !important;
@@ -196,10 +211,6 @@
         
         .testimonial{
            width: 65%
-        }
-
-        .testimonial:nth-child(2n){
-            align-self: flex-end
         }
 
         &__gallery{

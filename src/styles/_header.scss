@@ -23,13 +23,11 @@
                 color: $darkText;
                 font-family: 'Noto Sans', sans-serif;
 
-                // &:hover{
-                //     border-bottom: solid .3rem $accentColor;
-                // }
-
-                &:active{
+                &:hover{
                     border-bottom: solid .3rem $accentColor;
                 }
+
+
             }
         }
     }   

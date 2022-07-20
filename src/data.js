@@ -97,6 +97,7 @@ export const inventoryData = [
         name: '1999 Toyota Sienna',
         price: 4999,
         kilometers: 2000,
+        img: 'inventory.jpg',
         type: 'automatic, 6-cylinder, FWD',
         description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
         specs: [
@@ -115,13 +116,13 @@ export const inventoryData = [
                 interiorColor: 'tan' 
             }
         ],
-        img: 'inventory.jpg'
     },
     {
         id: 2,
         name: '1999 Toyota Sienna',
         price: 1234,
         kilometers: 1000,
+        img: 'accident.png',
         type: 'automatic, 6-cylinder, FWD',
         description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
         specs: [
@@ -140,13 +141,13 @@ export const inventoryData = [
                 interiorColor: 'tan' 
             }
         ],
-        img: 'inventory'
     },
     {
         id: 3,
         name: '1999 Toyota Sienna',
         price: 8999,
         kilometers: 6000,
+        img: 'inventory.jpg',
         type: 'automatic, 6-cylinder, FWD',
         description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
         specs: [
@@ -165,13 +166,13 @@ export const inventoryData = [
                 interiorColor: 'tan' 
             }
         ],
-        img: 'inventory'
     },
     {
         id: 4,
         name: '1999 Toyota Sienna',
         price: 2222,
         kilometers: 4000,
+        img: 'inventory.jpg',
         type: 'automatic, 6-cylinder, FWD',
         description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
         specs: [
@@ -190,13 +191,13 @@ export const inventoryData = [
                 interiorColor: 'tan' 
             }
         ],
-        img: 'inventory'
     },
     {
         id: 5,
         name: '1999 Toyota Sienna',
         price: 1111,
         kilometers: 3000,
+        img: 'inventory.jpg',
         type: 'automatic, 6-cylinder, FWD',
         description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
         specs: [
@@ -215,7 +216,6 @@ export const inventoryData = [
                 interiorColor: 'tan' 
             }
         ],
-        img: 'inventory'
     }
 ]
 
