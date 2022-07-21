@@ -98,6 +98,7 @@ export const inventoryData = [
         price: 4999,
         kilometers: 2000,
         img: 'inventory.jpg',
+        imgList: ['inventory.jpg','inventory.jpg','inventory.jpg','inventory.jpg'],
         type: 'automatic, 6-cylinder, FWD',
         description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
         specs: [
@@ -123,6 +124,7 @@ export const inventoryData = [
         price: 1234,
         kilometers: 1000,
         img: 'accident.png',
+        imgList: ['inventory.jpg','inventory.jpg','inventory.jpg','inventory.jpg'],
         type: 'automatic, 6-cylinder, FWD',
         description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
         specs: [
@@ -148,6 +150,7 @@ export const inventoryData = [
         price: 8999,
         kilometers: 6000,
         img: 'inventory.jpg',
+        imgList: ['inventory.jpg','inventory.jpg','inventory.jpg','inventory.jpg'],
         type: 'automatic, 6-cylinder, FWD',
         description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
         specs: [
@@ -173,6 +176,7 @@ export const inventoryData = [
         price: 2222,
         kilometers: 4000,
         img: 'inventory.jpg',
+        imgList: ['inventory.jpg','inventory.jpg','inventory.jpg','inventory.jpg'],
         type: 'automatic, 6-cylinder, FWD',
         description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
         specs: [
@@ -198,6 +202,7 @@ export const inventoryData = [
         price: 1111,
         kilometers: 3000,
         img: 'inventory.jpg',
+        imgList: ['inventory.jpg','inventory.jpg','inventory.jpg','inventory.jpg'],
         type: 'automatic, 6-cylinder, FWD',
         description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
         specs: [

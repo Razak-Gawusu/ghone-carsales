@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { inventoryData } from '../data'
 import { FaLongArrowAltLeft } from 'react-icons/fa'
-
+import Carousel from '../components/Carousel'
 
 function InventorySingleLayout() {
     const { id } = useParams()
@@ -26,7 +26,7 @@ function InventorySingleLayout() {
                         </div>
 
                         <div className='inventorySingle__item--img'>
-                            <img src={require(`../images/${inventory.img}`)} alt={inventory.img} />
+                            <Carousel images={inventory.imgList}/>
                         </div>
                     </div>
 
