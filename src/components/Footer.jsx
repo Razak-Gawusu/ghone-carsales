@@ -7,12 +7,11 @@ function Footer() {
     <footer className='footer'>
       <div className="footer--wrapper container">
       <div className='footer__primary'>
-        <h3>Brand name</h3>
+        <h3>Car Sales GH</h3>
         <ul>
-          <li>Ghana 1 Car Sales</li>
           <li>250 Regina Rd Suite 1</li>
-          <li>Vaughan, ON, L4L 8N2 Canada</li>
-          <li>647-221-318</li>
+          <li>Near Special Plaza, Lagos Avenue, East Legon, Accra, Ghana</li>
+          <li>+233 54 711 6444</li>
         </ul>
       </div>
 

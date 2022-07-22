@@ -54,7 +54,9 @@ img {
 .header--wrapper .brandName {
   font-family: "Noto Sans", sans-serif;
   font-size: 2.75rem;
-  color: #000000;
+  color: rgb(15, 47, 105);
+  text-decoration: none;
+  font-weight: bold;
 }
 .header--wrapper .icon {
   font-size: 2rem;
@@ -73,7 +75,7 @@ img {
   font-family: "Noto Sans", sans-serif;
 }
 .header--wrapper .navbar .nav__link:hover {
-  border-bottom: solid 0.3rem rgb(212, 26, 26);
+  border-bottom: solid 0.3rem rgb(15, 47, 105);
 }
 .header--wrapper .mobile__nav {
   position: absolute;
@@ -82,7 +84,7 @@ img {
   bottom: 0;
   width: 0;
   overflow: hidden;
-  background-color: rgb(212, 26, 26);
+  background-color: rgb(15, 47, 105);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -160,14 +162,14 @@ img {
   border-bottom: solid transparent 2px;
 }
 .footer--wrapper .footer__secondary .navbar .nav__link:hover {
-  border-bottom: solid rgb(212, 26, 26) 2px;
+  border-bottom: solid rgb(15, 47, 105) 2px;
 }
 .footer--wrapper .footer__secondary .footer--icon {
   font-size: 2rem;
   margin-right: 1rem;
 }
 .footer--wrapper .footer__secondary .footer--icon:hover {
-  color: rgb(212, 26, 26);
+  color: rgb(15, 47, 105);
 }
 
 @media screen and (max-width: 859px) {
@@ -251,7 +253,7 @@ img {
     gap: 1rem;
   }
   .hero__text .hero__links .callToAction {
-    background-color: rgb(212, 26, 26);
+    background-color: rgb(15, 47, 105);
     color: #ffffff;
     text-transform: capitalize;
   }
@@ -398,11 +400,11 @@ img {
   margin-bottom: 2rem;
 }
 .hero__text .hero__links .callToAction {
-  background-color: rgb(212, 26, 26);
+  background-color: rgb(15, 47, 105);
   color: #ffffff;
 }
 .hero__text .hero__links .callToAction:hover {
-  background-color: rgb(216, 59, 59);
+  opacity: 0.7;
 }
 .hero__image {
   display: none;
@@ -417,7 +419,7 @@ img {
 }
 .mainTitle::before {
   content: "";
-  background-color: rgb(212, 26, 26);
+  background-color: rgb(15, 47, 105);
   height: 0.5rem;
   width: 10rem;
   position: absolute;
@@ -443,6 +445,7 @@ img {
 }
 .btn:hover {
   transform: translateY(-0.5rem);
+  opacity: 0.85;
 }
 
 .link {
@@ -466,6 +469,10 @@ img {
   height: 10rem;
 }
 
+.a {
+  text-decoration: none;
+}
+
 .inventory__heading {
   background-color: #EFEFEF;
 }
@@ -486,7 +493,7 @@ img {
   font-size: 1.5rem;
 }
 .inventory .inventoryMain .inventory__sort .btn:hover {
-  background-color: rgb(212, 26, 26);
+  background-color: rgb(15, 47, 105);
   color: #ffffff;
 }
 .inventory .inventoryMain .inventory--wrapper {
@@ -495,8 +502,9 @@ img {
 }
 
 .inventoryCard {
+  margin: 4rem 0;
   position: relative;
-  height: 32.5rem;
+  height: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -525,12 +533,13 @@ img {
   gap: 1rem;
 }
 .inventoryCard .inventoryCard__info--name {
-  color: rgb(212, 26, 26);
+  color: rgb(15, 47, 105);
   font-size: 2.25rem;
 }
 .inventoryCard .inventoryCard__info--price {
-  font-size: 1.85rem;
-  color: rgb(6, 143, 102);
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(201, 29, 29);
   padding: 0.75rem 0;
 }
 .inventoryCard .inventoryCard__info--type {
@@ -542,7 +551,7 @@ img {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background-color: rgb(6, 143, 102);
+  background-color: rgb(201, 29, 29);
   color: white;
   padding: 0.5rem 1.2rem;
 }
@@ -564,7 +573,7 @@ img {
 }
 
 .contact {
-  height: 100vh;
+  min-height: 100vh;
 }
 .contact__heading {
   padding: 4rem 0;
@@ -601,8 +610,16 @@ img {
 .contact__mainContent--item div .instagram {
   color: orange;
 }
+.contact__mainContent--item div a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
 .contact--icon {
-  color: rgb(212, 26, 26);
+  color: rgb(15, 47, 105);
   margin-right: 1rem;
 }
 
@@ -615,7 +632,10 @@ img {
   margin: 4rem 0;
 }
 .error--wrapper .paragraph .link {
-  color: rgb(212, 26, 26);
+  color: rgb(15, 47, 105);
+}
+.error--wrapper .paragraph .link:hover {
+  text-decoration: underline;
 }
 
 .inventorySingle .link {
@@ -623,7 +643,7 @@ img {
   color: rgb(41, 41, 41);
 }
 .inventorySingle .link:hover {
-  color: rgb(212, 26, 26);
+  color: rgb(15, 47, 105);
 }
 .inventorySingle--wrapper {
   padding: 4rem 0;
@@ -642,7 +662,7 @@ img {
   margin: 2rem 0;
 }
 .inventorySingle--wrapper .inventorySingle__item--text .accentColor {
-  color: rgb(6, 143, 102);
+  color: rgb(201, 29, 29);
 }
 .inventorySingle--wrapper .inventorySingle__item--spec {
   display: grid;
@@ -690,7 +710,7 @@ img {
 .happyCustomers__mainContent .testimonial__customer {
   font-size: 1.75rem;
   font-family: "Noto Sans", sans-serif;
-  color: rgb(212, 26, 26);
+  color: rgb(15, 47, 105);
   margin: 2rem 0;
 }
 .happyCustomers__gallery .mainTitle {
@@ -728,7 +748,7 @@ img {
 }
 .home .experiences .container .experiences__item .icon {
   font-size: clamp(2.5rem, 5vw, 10rem);
-  color: rgb(212, 26, 26);
+  color: rgb(15, 47, 105);
 }
 .home .experiences .container .experiences__item h5 {
   font-size: clamp(1.25rem, 1vw, 2rem);
@@ -739,13 +759,14 @@ img {
 }
 .home .latestVehicles__item .mainTitle {
   font-size: 2.75rem;
+  padding: 2rem 0;
 }
 .home .latestVehicles__item .paragraph {
   margin: 4rem 0;
 }
 .home .latestVehicles__item .btn {
   font-size: 2rem;
-  background-color: rgb(212, 26, 26);
+  background-color: rgb(15, 47, 105);
   color: #ffffff;
   display: inline-block;
   display: flex;
@@ -806,7 +827,7 @@ img {
   font-family: "Noto Sans", sans-serif;
 }
 .home .happyCustomers__item .testimonialsCard__info h5 {
-  color: rgb(212, 26, 26);
+  color: rgb(15, 47, 105);
   font-size: 1.7rem;
 }
 .home .happyCustomers__item .testimonialsCard__info h6 {
@@ -816,7 +837,7 @@ img {
 .home .happyCustomers__item .testimonialsCard .icon {
   color: #ffffff;
   font-size: 5rem;
-  background-color: rgb(212, 26, 26);
+  background-color: rgb(15, 47, 105);
   padding: 1.25rem;
   display: inline-block;
   position: absolute;
@@ -827,7 +848,7 @@ img {
   z-index: 1;
 }
 .home .happyCustomers__item .btn {
-  background-color: rgb(212, 26, 26);
+  background-color: rgb(15, 47, 105);
   font-size: 2rem;
   color: #ffffff;
   font-family: "Noto Sans", sans-serif;
@@ -849,7 +870,7 @@ img {
   padding: 4rem 0;
 }
 .home .readyToConnect__info h1 span {
-  color: rgb(212, 26, 26);
+  color: rgb(15, 47, 105);
 }
 
 .carousel {

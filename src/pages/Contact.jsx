@@ -15,12 +15,12 @@ function Contact() {
         </section>
         <section className="contact__mainContent container">
           <article className='contact__mainContent--item'>
-            <h2 className='mainTitle'>Ghana 1 Car Sales</h2>
+            <h2 className='mainTitle'>Car Sales GH</h2>
             <p className='paragraph'>Ready to move forward with securing your next vehicle? Contact us now!</p>
             <h5>By appointment only.</h5>
             <div>
               <FaMarker className='contact--icon' />
-              250 Regin Rd Suite 1. Voughan, ON L4L BN2
+              Near Special Plaza, Lagos Avenue, East Legon, Accra, Ghana
             </div>
 
             <div>
@@ -28,7 +28,7 @@ function Contact() {
             </div>
 
             <div>
-              <FaEnvelope className='contact--icon'/> sale@ghanaonecarsales.org
+              <a href="mailto:sale@carsalesgh.org"><FaEnvelope className='contact--icon'/> sale@carsalesgh.org</a>
             </div>
 
             <div>
@@ -42,12 +42,12 @@ function Contact() {
           </article>
           <article className='contact__mainContent--item' id='contactMap'>
             {/* <img src="./images/map.png" alt="" /> */}
-              <MapContainer id='map' center={[51.505, -0.09]} zoom={15 } scrollWheelZoom={true}>
+              <MapContainer id='map' center={[5.6314084, -0.1729938]} zoom={15 } scrollWheelZoom={true}>
                 <TileLayer
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={[51.505, -0.09]}></Marker>
+                <Marker position={[5.6314084, -0.1729938]}></Marker>
               </MapContainer>
           </article>
         </section>

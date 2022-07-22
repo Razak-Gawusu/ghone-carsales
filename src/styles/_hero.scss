@@ -28,7 +28,7 @@
                 background-color: $accentColor;
                 color: $lightText;
                 &:hover{
-                    background-color: $accentColorHover;
+                    opacity: .7;
                 }
             }
         }

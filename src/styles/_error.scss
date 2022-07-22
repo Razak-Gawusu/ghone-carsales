@@ -11,6 +11,9 @@
     
             .link{
                 color: $accentColor;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }

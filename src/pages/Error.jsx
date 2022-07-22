@@ -10,7 +10,7 @@ function Error() {
           <p className='paragraph'>Accidents happen. <Link to='/' className='link'>Click here</Link> to go back to the home page.</p>
         </div>
         <div className='error__item'>
-          <img src="./images/accident.png" alt="crashed car" />
+          <img src={require('../images/accident.png')} alt="crashed car" />
         </div>
       </div>
     </div>

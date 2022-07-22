@@ -94,13 +94,13 @@ export const testimonials = [
 export const inventoryData = [
     {
         id: 1,
-        name: '1999 Toyota Sienna',
-        price: 4999,
-        kilometers: 2000,
-        img: 'inventory.jpg',
-        imgList: ['inventory.jpg','inventory.jpg','inventory.jpg','inventory.jpg'],
+        name: 'Mercedes-Benz E300 2017',
+        price: 250000,
+        kilometers: 212000,
+        img: 'Benz1.jpg',
+        imgList: ['Benz1.jpg','Benz2.jpg', 'Benz3.jpg', 'Benz4.jpg'],
         type: 'automatic, 6-cylinder, FWD',
-        description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
+        description: 'Mercedes-Benz E300 2017 available for sale with only 212672 kilometres!',
         specs: [
             {
                 odometer: 212672,
@@ -120,13 +120,13 @@ export const inventoryData = [
     },
     {
         id: 2,
-        name: '1999 Toyota Sienna',
-        price: 1234,
-        kilometers: 1000,
-        img: 'accident.png',
-        imgList: ['inventory.jpg','inventory.jpg','inventory.jpg','inventory.jpg'],
+        name: 'Hyundai Tucson AWD Limited 2017',
+        price: 116500,
+        kilometers: 115250,
+        img: 'Hyundai1.jpg',
+        imgList: ['Hyundai1.jpg','Hyundai2.jpg', 'Hyundai3.jpg', 'Hyundai4.jpg', 'Hyundai5.jpg'],
         type: 'automatic, 6-cylinder, FWD',
-        description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
+        description: 'Hyundai Tucson AWD Limited 2017 available for sale with only 212672 kilometres!',
         specs: [
             {
                 odometer: 212672,
@@ -146,13 +146,13 @@ export const inventoryData = [
     },
     {
         id: 3,
-        name: '1999 Toyota Sienna',
-        price: 8999,
-        kilometers: 6000,
-        img: 'inventory.jpg',
-        imgList: ['inventory.jpg','inventory.jpg','inventory.jpg','inventory.jpg'],
+        name: '2013 Kia Forte Koupe',
+        price: 68500,
+        kilometers: 300025,
+        img: 'Kia1.jpg',
+        imgList: ['Kia1.jpg','Kia2.jpg', 'Kia3.jpg', 'Kia4.jpg', 'Kia5.jpg'],
         type: 'automatic, 6-cylinder, FWD',
-        description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
+        description: '2013 Kia Forte Koupe available for sale with only 212672 kilometres!',
         specs: [
             {
                 odometer: 212672,
@@ -172,13 +172,13 @@ export const inventoryData = [
     },
     {
         id: 4,
-        name: '1999 Toyota Sienna',
-        price: 2222,
-        kilometers: 4000,
-        img: 'inventory.jpg',
-        imgList: ['inventory.jpg','inventory.jpg','inventory.jpg','inventory.jpg'],
+        name: 'Ford Mustang EcoBoost Fastback 2017',
+        price: 120000,
+        kilometers: 90525,
+        img: 'Ford1.jpg',
+        imgList: ['Ford1.jpg','Ford2.jpg', 'Ford3.jpg', 'Ford4.jpg'],
         type: 'automatic, 6-cylinder, FWD',
-        description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
+        description: 'Ford Mustang EcoBoost Fastback 2017 available for sale with only 212672 kilometres!',
         specs: [
             {
                 odometer: 212672,
@@ -198,13 +198,13 @@ export const inventoryData = [
     },
     {
         id: 5,
-        name: '1999 Toyota Sienna',
-        price: 1111,
-        kilometers: 3000,
-        img: 'inventory.jpg',
-        imgList: ['inventory.jpg','inventory.jpg','inventory.jpg','inventory.jpg'],
+        name: 'Lexus RX 350 F Sport 2017',
+        price: 220000,
+        kilometers: 125400,
+        img: 'Lexus1.jpg',
+        imgList: ['Lexus1.jpg','Lexus2.jpg', 'Lexus3.jpg', 'Lexus4.jpg', 'Lexus5.jpg'],
         type: 'automatic, 6-cylinder, FWD',
-        description: 'Western Canadian 1999 Toyota Sienna minivan available for sale with only 212672 kilometres!',
+        description: 'Lexus RX 350 F Sport 2017 available for sale with only 212672 kilometres!',
         specs: [
             {
                 odometer: 212672,

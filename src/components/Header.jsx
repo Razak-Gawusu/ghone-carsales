@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import {NavLink} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 import Navbar from './Navbar'
 import {FaTimes, FaBars} from 'react-icons/fa'
 
@@ -15,7 +15,7 @@ function Header() {
   return (
     <div className='header'>
       <div className="header--wrapper container">
-        <h3 className='brandName'>GHONE Car Sales</h3>
+        <Link to='/' className='brandName'>Car Sales GH</Link>
         <Navbar />
 
         <div className='mobile__nav' ref={mobileNav}>

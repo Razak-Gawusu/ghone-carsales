@@ -32,8 +32,9 @@
 }
 
 .inventoryCard{
+    margin: 4rem 0;
     position: relative;
-    height: 32.5rem;
+    height: 35rem;
     @include flexbox(column, space-between, stretch);
     transition:  all .25s ease-in-out;
     background-color: $lightText;
@@ -60,7 +61,8 @@
         }
 
         &--price{
-            font-size: 1.85rem;
+            font-size: 2rem;
+            font-weight: bold;
             color: $accentColor2;
             padding: .75rem 0;
         }

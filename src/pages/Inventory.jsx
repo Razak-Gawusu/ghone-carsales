@@ -46,6 +46,7 @@ function Inventory() {
             <InventoryCard 
               key={inventory.id}
               id={inventory.id}
+              img={inventory.img}
               name={inventory.name}
               price={inventory.price}
               type={inventory.type}

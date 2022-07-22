@@ -18,7 +18,7 @@ function Home() {
           <h1 className="mainTitle">Looking to buy a quality used vehicle?</h1>
           <img src="./images/car.webp" alt="car" className='hero__text--image' />
           <p className='paragraph'>
-          Our team has over 20 years of experience with buying, selling and servicing everyday and premium high-end vehicles.          </p>
+          Our team has over 20 years of experience with buying, selling and servicing everyday and premium high-end vehicles.</p>
           <div className='hero__links'>
           <Link to='/inventory' className='btn'> view inventory</Link> 
           <Link to='/contact' className='btn callToAction'> get in touch</Link> 
@@ -56,6 +56,7 @@ function Home() {
             <InventoryCard 
             key={inventory.id}
             id={inventory.id}
+            img={inventory.img}
             name={inventory.name}
             price={inventory.price}
             type={inventory.type}
@@ -76,22 +77,22 @@ function Home() {
           <div className='aboutUs__item'>
               <h2 className='mainTitle'>About Us</h2>
               <p className='paragraph'>
-              Driven by the passion of owner Darren Nickerson, Canada 1 Car Sales is all about the love and enjoyment of automobiles. We love cars, and we love seeing people enjoy their car.
+              Driven by the passion of owner Gawusu Razak, Car Sales GH is all about the love and enjoyment of automobiles. We love cars, and we love seeing people enjoy their car.
               </p>
 
               <p className='paragraph'>
-              To properly enjoy your vehicle, you need to be sure you get the right car at the right price. When the vehicle fits your needs and budget, that's real value. We have been serving customers in Woodbridge, Vaughan and Toronto for over 20 years.
+              To properly enjoy your vehicle, you need to be sure you get the right car at the right price. When the vehicle fits your needs and budget, that's real value. We have been serving customers in Tema, Kumasi and Accra for over 20 years.
               </p>
           </div>
 
           <div className='aboutUs__item' id='map'>
               {/* <img src="./images/map.png" alt="" /> */}
-              <MapContainer id='map' center={[51.505, -0.09]} zoom={15 } scrollWheelZoom={true}>
+              <MapContainer id='map' center={[5.6314084, -0.1729938]} zoom={15 } scrollWheelZoom={true}>
                 <TileLayer
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={[51.505, -0.09]}></Marker>
+                <Marker position={[5.6314084, -0.1729938]}></Marker>
               </MapContainer>
           </div>
         </div>

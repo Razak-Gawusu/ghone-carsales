@@ -1,5 +1,5 @@
 .contact{
-    height: 100vh;
+    min-height: 100vh;
     &__heading{
         padding: 4rem 0;
         background-color: $darkBackgroundAlt;
@@ -34,6 +34,11 @@
 
             .instagram{
                 color: orange;
+            }
+
+            a{
+                @include flexbox(row, flex-start, center);
+                text-decoration: none;
             }
         }
     }
