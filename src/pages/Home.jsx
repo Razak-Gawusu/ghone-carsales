@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import {FaCalendarAlt, FaCar, FaThumbsUp, FaLongArrowAltRight} from 'react-icons/fa'
 import {inventoryData , testimonials} from '../data'
@@ -7,9 +7,7 @@ import TestimonialsCard from '../components/TestimonialsCard'
 import {MapContainer, Marker, TileLayer} from 'react-leaflet'
 
 function Home() {
-  const [inventory, setInventory] = useState(inventoryData)
-  const [testimonialsData, setTestimonialsData] = useState(testimonials)
-  
+
   return (
     <>
     <div className="home">
@@ -52,7 +50,7 @@ function Home() {
           </div>
 
           <div className='latestVehicles__item--cards'>
-            {inventory.slice(0, 3).map((inventory) => (
+            {inventoryData.slice(0, 3).map((inventory) => (
             <InventoryCard 
             key={inventory.id}
             id={inventory.id}
@@ -104,7 +102,7 @@ function Home() {
           <p className="paragraph">Don't take our word for it, see what some of our loyal customers have to say! </p>
 
           <div className="happyCustomers__item">
-              {testimonialsData.map((testimonial) => (
+              {testimonials.map((testimonial) => (
                 <TestimonialsCard 
                   key={testimonial.id}
                   title={testimonial.title}

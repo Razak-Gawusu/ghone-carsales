@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import {inventoryData} from '../data'
 import InventoryCard from '../components/InventoryCard'
 
@@ -16,10 +16,6 @@ function Inventory() {
       prev.slice(0).sort((a, b) => a.price - b.price) 
     ))
   }
-
-  useEffect(() => {
-    console.log('refreshed')
-  }, [inventory])
   
 
   return (
